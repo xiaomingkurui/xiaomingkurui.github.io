@@ -7,16 +7,16 @@
   
   <title>数模——储存 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天学习了数学模型之储存模型，具体内容参见教材P59，链接网易公开课在线课程class 技巧###枚举法在需要计算总费用时，先假设代入几个值，大的，小的，中间的，从而得到一个大概趋势。 ###积分思想——求平均值本题中，储存量q（t），并假设每天每件产品储存费为c2。则用c2乘以q在0到T（一个周期内）的积分，即可得到所消费的价格。在这里这其实和传统的算术平均数没什么本质区别，毕竟q线性变换。但是">
+  <meta name="description" content="今天学习了数学模型之储存模型，具体内容参见教材P59，链接网易公开课在线课程class 技巧枚举法在需要计算总费用时，先假设代入几个值，大的，小的，中间的，从而得到一个大概趋势。 积分思想——求平均值本题中，储存量q（t），并假设每天每件产品储存费为c2。则用c2乘以q在0到T（一个周期内）的积分，即可得到所消费的价格。在这里这其实和传统的算术平均数没什么本质区别，毕竟q线性变换。但是，积分求平均">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数模——储存">
 <meta property="og:url" content="http://yoursite.com/2018/03/30/数模——储存/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="今天学习了数学模型之储存模型，具体内容参见教材P59，链接网易公开课在线课程class 技巧###枚举法在需要计算总费用时，先假设代入几个值，大的，小的，中间的，从而得到一个大概趋势。 ###积分思想——求平均值本题中，储存量q（t），并假设每天每件产品储存费为c2。则用c2乘以q在0到T（一个周期内）的积分，即可得到所消费的价格。在这里这其实和传统的算术平均数没什么本质区别，毕竟q线性变换。但是">
-<meta property="og:updated_time" content="2018-03-30T13:42:32.950Z">
+<meta property="og:description" content="今天学习了数学模型之储存模型，具体内容参见教材P59，链接网易公开课在线课程class 技巧枚举法在需要计算总费用时，先假设代入几个值，大的，小的，中间的，从而得到一个大概趋势。 积分思想——求平均值本题中，储存量q（t），并假设每天每件产品储存费为c2。则用c2乘以q在0到T（一个周期内）的积分，即可得到所消费的价格。在这里这其实和传统的算术平均数没什么本质区别，毕竟q线性变换。但是，积分求平均">
+<meta property="og:updated_time" content="2018-03-30T13:44:25.715Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数模——储存">
-<meta name="twitter:description" content="今天学习了数学模型之储存模型，具体内容参见教材P59，链接网易公开课在线课程class 技巧###枚举法在需要计算总费用时，先假设代入几个值，大的，小的，中间的，从而得到一个大概趋势。 ###积分思想——求平均值本题中，储存量q（t），并假设每天每件产品储存费为c2。则用c2乘以q在0到T（一个周期内）的积分，即可得到所消费的价格。在这里这其实和传统的算术平均数没什么本质区别，毕竟q线性变换。但是">
+<meta name="twitter:description" content="今天学习了数学模型之储存模型，具体内容参见教材P59，链接网易公开课在线课程class 技巧枚举法在需要计算总费用时，先假设代入几个值，大的，小的，中间的，从而得到一个大概趋势。 积分思想——求平均值本题中，储存量q（t），并假设每天每件产品储存费为c2。则用c2乘以q在0到T（一个周期内）的积分，即可得到所消费的价格。在这里这其实和传统的算术平均数没什么本质区别，毕竟q线性变换。但是，积分求平均">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -86,17 +86,16 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>今天学习了数学模型之储存模型，具体内容参见教材P59，链接网易公开课在线课程<a href="http://open.163.com/movie/2013/4/G/S/M98EVI91I_M9BVR0TGS.html" target="_blank" rel="noopener">class</a></p>
-<h2 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h2><p>###枚举法<br>在需要计算总费用时，先假设代入几个值，大的，小的，中间的，从而得到一个大概趋势。</p>
-<p>###积分思想——求平均值<br>本题中，储存量q（t），并假设每天每件产品储存费为c2。则用c2乘以q在0到T（一个周期内）的积分，即可得到所消费的价格。在这里这其实和传统的算术平均数没什么本质区别，毕竟q线性变换。但是，积分求平均值是正确、通用的办法。换句话说，曲线可以是任意形状，只要积分合适，均可找到正确的花费。</p>
-<p>##核心思想</p>
-<p>###分类讨论<br>本模型分允许与不允许缺货的情形进行讨论。当然还涉及假设部分内容。在不允许缺货的情况下假设“瞬间供货”，而允许缺货情形下次采购自动补齐。显然不允许缺货是允许缺货的一种特例，然而两种思维、考虑方式却有所不同：不允许缺货的情况下一个周期比真实的储存周期略长，长的部分不必计算储存费用，却需要额外计算缺货损失费。<br>就像牛顿定律是相对论宏观低速状态下的特例一样，可以退化过去，证明假设正确。<br>允许缺货情况下如果缺货损失费无限大，则近似于不能缺货。相关验证过程略。</p>
-<p>###与常识适当比较<br>将几个变量c1，c2还有T，Q等根据推导式观察，一个量变化，另一个或几个怎样随之变化。如果与常识相符，再次说明模型正确。</p>
-<p>##思考问题<br>1、为什么假设一定是等周期生产？<br>2、生产费用，成本为何不予考虑？（其实那些都假定为常数，没有必要考虑）<br>3、如果考虑打折、生产能力有限的情况怎么办？<br>4、多个物品同时进货，换产问题？</p>
+<h2 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h2><h3 id="枚举法"><a href="#枚举法" class="headerlink" title="枚举法"></a>枚举法</h3><p>在需要计算总费用时，先假设代入几个值，大的，小的，中间的，从而得到一个大概趋势。</p>
+<h3 id="积分思想——求平均值"><a href="#积分思想——求平均值" class="headerlink" title="积分思想——求平均值"></a>积分思想——求平均值</h3><p>本题中，储存量q（t），并假设每天每件产品储存费为c2。则用c2乘以q在0到T（一个周期内）的积分，即可得到所消费的价格。在这里这其实和传统的算术平均数没什么本质区别，毕竟q线性变换。但是，积分求平均值是正确、通用的办法。换句话说，曲线可以是任意形状，只要积分合适，均可找到正确的花费。</p>
+<h2 id="核心思想"><a href="#核心思想" class="headerlink" title="核心思想"></a>核心思想</h2><h3 id="分类讨论"><a href="#分类讨论" class="headerlink" title="分类讨论"></a>分类讨论</h3><p>本模型分允许与不允许缺货的情形进行讨论。当然还涉及假设部分内容。在不允许缺货的情况下假设“瞬间供货”，而允许缺货情形下次采购自动补齐。显然不允许缺货是允许缺货的一种特例，然而两种思维、考虑方式却有所不同：不允许缺货的情况下一个周期比真实的储存周期略长，长的部分不必计算储存费用，却需要额外计算缺货损失费。<br>就像牛顿定律是相对论宏观低速状态下的特例一样，可以退化过去，证明假设正确。<br>允许缺货情况下如果缺货损失费无限大，则近似于不能缺货。相关验证过程略。</p>
+<h3 id="与常识适当比较"><a href="#与常识适当比较" class="headerlink" title="与常识适当比较"></a>与常识适当比较</h3><p>将几个变量c1，c2还有T，Q等根据推导式观察，一个量变化，另一个或几个怎样随之变化。如果与常识相符，再次说明模型正确。</p>
+<h2 id="思考问题"><a href="#思考问题" class="headerlink" title="思考问题"></a>思考问题</h2><p>1、为什么假设一定是等周期生产？<br>2、生产费用，成本为何不予考虑？（其实那些都假定为常数，没有必要考虑）<br>3、如果考虑打折、生产能力有限的情况怎么办？<br>4、多个物品同时进货，换产问题？</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/30/数模——储存/" data-id="cjfdzzlt00000j0lmlp88cpp5" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/30/数模——储存/" data-id="cjfe02c8c00013wlmcottlyjc" class="article-share-link">Compartir</a>
       
       
     </footer>
@@ -107,7 +106,7 @@
   
   
     <a href="/2018/03/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Älter</strong>
+      <strong class="article-nav-caption">Viejo</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -130,7 +129,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archivos</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
     </div>
@@ -140,7 +139,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Posts recientes</h3>
     <div class="widget">
       <ul>
         
@@ -165,7 +164,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2018 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Construido por <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
