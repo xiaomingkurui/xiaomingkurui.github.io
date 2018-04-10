@@ -15,7 +15,7 @@
 <meta property="og:description" content="MATLAB用到的几个函数polyfit(X,Y,N)：为多项式拟合。返回降幂排列的多项式。x，y为未知量，而N为最高次次数。返回变量的权重向量。(注：x，y默认为列向量,下面所有函数均适用）；而polyval则与之搭配使用，返回多项式的系数。具体拟合函数可以参考这里    fittypefittype(‘自定义函数’,’independent’,’自变量’,’coefficient’,{系数1，">
 <meta property="og:image" content="http://yoursite.com/2018/04/07/数据拟合/C:/hub一大堆/Blog/blog/source/_posts/数据拟合/绘制参数表">
 <meta property="og:image" content="http://yoursite.com/2018/04/07/数据拟合/施救中毒图像">
-<meta property="og:updated_time" content="2018-04-10T13:27:50.490Z">
+<meta property="og:updated_time" content="2018-04-10T13:32:34.247Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据拟合">
 <meta name="twitter:description" content="MATLAB用到的几个函数polyfit(X,Y,N)：为多项式拟合。返回降幂排列的多项式。x，y为未知量，而N为最高次次数。返回变量的权重向量。(注：x，y默认为列向量,下面所有函数均适用）；而polyval则与之搭配使用，返回多项式的系数。具体拟合函数可以参考这里    fittypefittype(‘自定义函数’,’independent’,’自变量’,’coefficient’,{系数1，">
@@ -90,28 +90,18 @@
       
         <h3 id="MATLAB用到的几个函数"><a href="#MATLAB用到的几个函数" class="headerlink" title="MATLAB用到的几个函数"></a>MATLAB用到的几个函数</h3><h2 id="polyfit-X-Y-N-："><a href="#polyfit-X-Y-N-：" class="headerlink" title="polyfit(X,Y,N)："></a>polyfit(X,Y,N)：</h2><p>为多项式拟合。返回降幂排列的多项式。x，y为未知量，而N为最高次次数。返回变量的权重向量。(注：x，y默认为列向量,下面所有函数均适用）；而polyval则与之搭配使用，返回多项式的系数。<br>具体拟合函数可以参考<a href="https://blog.csdn.net/wendingzhulu/article/details/43062845" target="_blank" rel="noopener">这里</a>   </p>
 <h2 id="fittype"><a href="#fittype" class="headerlink" title="fittype"></a>fittype</h2><p>fittype(‘自定义函数’,’independent’,’自变量’,’coefficient’,{系数1，系数2})有了此方法，在能确定函数的情况下，再代入一组数据，可以很好的确定相应方程中的系数。<br>注意：此处的数据必须为列向量的形式。具体操作方法很简单，就是输入一个数后面加’;’就行，当然也可以将行向量转置。</p>
-<h2 id="polyval函数："><a href="#polyval函数：" class="headerlink" title="polyval函数："></a>polyval函数：</h2><p>对应多项式拟合，可以通过设定向量，快速定义多项式<br>y = polyval(p,x)<br>输入变量p=[p0 p1 p2…pn]是一个长度为n+1的横向量，其元素是由一个多项式的系数组成，元素的排列方式为：多项式系数的顺序必须是高次幂到低次幂，多项式中缺少的幂次要用’0’来补齐，格式和例子如下：<br>格式：y=p(0)<em>x^n+p(1)</em>x^n-1+……+p(n-1)<em>x+p(n)<br>例子：y=-2+3</em>x-5<em>x^2+6</em>x^3, 则p=[6,-5,3,-2];<br>又如：y=x^4+2<em>x^2-x+1, 则p=[1,0,2,-1,1]。<br>x可以是一个矩阵或者一个向量,在这两种情况下，polyval计算在X中任意元素处的多项式p的估值。<br>对多项式p(x)=1+2</em>x+3*x^2，计算在x=5,7,9的值。   </p>
-<blockquote>
-<blockquote>
-<p>x=[5,7,9];<br>p=[3,2,1];<br>polyval(p,x)<br>%结果为<br>ans =<br>86 162 262<br>注：返回值可能是以矩阵形式返回的，出现Columns i through k不要奇怪，就是按列把矩阵展示出来。   </p>
-</blockquote>
-</blockquote>
+<h2 id="polyval函数："><a href="#polyval函数：" class="headerlink" title="polyval函数："></a>polyval函数：</h2><p>对应多项式拟合，可以通过设定向量，快速定义多项式<br>y = polyval(p,x)<br>输入变量p=[p0 p1 p2…pn]是一个长度为n+1的横向量，其元素是由一个多项式的系数组成，元素的排列方式为：多项式系数的顺序必须是高次幂到低次幂，多项式中缺少的幂次要用’0’来补齐，格式和例子如下：<br>格式：y=p(0)<em>x^n+p(1)</em>x^n-1+……+p(n-1)<em>x+p(n)<br>例子：y=-2+3</em>x-5<em>x^2+6</em>x^3, 则p=[6,-5,3,-2];<br>又如：y=x^4+2<em>x^2-x+1, 则p=[1,0,2,-1,1]。<br>x可以是一个矩阵或者一个向量,在这两种情况下，polyval计算在X中任意元素处的多项式p的估值。<br>对多项式p(x)=1+2</em>x+3*x^2，计算在x=5,7,9的值。<br>x=[5,7,9];<br>p=[3,2,1];<br>polyval(p,x)<br>%结果为<br>ans =<br>86 162 262<br>注：返回值可能是以矩阵形式返回的，出现Columns i through k不要奇怪，就是按列把矩阵展示出来。   </p>
 <h2 id="画图的函数plot（二维）"><a href="#画图的函数plot（二维）" class="headerlink" title="画图的函数plot（二维）"></a>画图的函数plot（二维）</h2><ol>
 <li>plot(x)<br>当x 为一向量时，以x 元素的值为纵坐标，x 的序号为横坐标值绘制曲线。当x 为一实矩阵时，则以其序号为横坐标，按列绘制每列元素值相对于其序号的曲线。   </li>
 <li>plot(x,y)<br>以x 元素为横坐标值，y 元素为纵坐标值绘制曲线   </li>
 <li>plot(x,y1,x,y2,….)<br>plot(x,y1,x,y2,…) 以公共的x 元素为横坐标值，以y1,y2,… 元素为纵坐标值绘制多条曲线   </li>
-<li>绘图参数表<br><img src="/2018/04/07/数据拟合/C:/hub一大堆\Blog\blog\source\_posts\数据拟合\绘制参数表" alt="绘图参数表"><br>实践：实现教材P11页的图像绘制。<br>代码如此简单：   <blockquote>
-<blockquote>
-<p>x=1100<em>exp(-0.1386</em>t);<br>y=6600<em>(exp(-0.1155</em>t)-exp(-0.1386*t));<br>plot(t,x,t,y)<br><img src="/2018/04/07/数据拟合/施救中毒图像" alt="施救中毒图像">   </p>
-</blockquote>
-</blockquote>
-</li>
+<li>绘图参数表<br><img src="/2018/04/07/数据拟合/C:/hub一大堆\Blog\blog\source\_posts\数据拟合\绘制参数表" alt="绘图参数表"><br>实践：实现教材P11页的图像绘制。<br>代码如此简单：<br>x=1100<em>exp(-0.1386</em>t);<br>y=6600<em>(exp(-0.1155</em>t)-exp(-0.1386*t));<br>plot(t,x,t,y)<br><img src="/2018/04/07/数据拟合/施救中毒图像" alt="施救中毒图像">   </li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/07/数据拟合/" data-id="cjftpdwxb0000m8lmtposyzt7" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/04/07/数据拟合/" data-id="cjftpi4em0002i8lm39y0zghr" class="article-share-link">Teilen</a>
       
       
     </footer>
