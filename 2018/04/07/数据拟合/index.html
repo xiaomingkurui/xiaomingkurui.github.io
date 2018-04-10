@@ -5,14 +5,21 @@
   
 
   
-  <title>Hexo</title>
+  <title>数据拟合 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="MATLAB用到的几个函数polyfit(X,Y,N)：为多项式拟合。返回降幂排列的多项式。x，y为未知量，而N为最高次次数。返回变量的权重向量。(注：x，y默认为列向量,下面所有函数均适用）；而polyval则与之搭配使用，返回多项式的系数。具体拟合函数可以参考这里    fittypefittype(‘自定义函数’,’independent’,’自变量’,’coefficient’,{系数1，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据拟合">
+<meta property="og:url" content="http://yoursite.com/2018/04/07/数据拟合/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="MATLAB用到的几个函数polyfit(X,Y,N)：为多项式拟合。返回降幂排列的多项式。x，y为未知量，而N为最高次次数。返回变量的权重向量。(注：x，y默认为列向量,下面所有函数均适用）；而polyval则与之搭配使用，返回多项式的系数。具体拟合函数可以参考这里    fittypefittype(‘自定义函数’,’independent’,’自变量’,’coefficient’,{系数1，">
+<meta property="og:image" content="http://yoursite.com/2018/04/07/数据拟合/C:/hub一大堆/Blog/blog/source/_posts/数据拟合/绘制参数表">
+<meta property="og:image" content="http://yoursite.com/2018/04/07/数据拟合/施救中毒图像">
+<meta property="og:updated_time" content="2018-04-10T13:27:50.490Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="数据拟合">
+<meta name="twitter:description" content="MATLAB用到的几个函数polyfit(X,Y,N)：为多项式拟合。返回降幂排列的多项式。x，y为未知量，而N为最高次次数。返回变量的权重向量。(注：x，y默认为列向量,下面所有函数均适用）；而polyval则与之搭配使用，返回多项式的系数。具体拟合函数可以参考这里    fittypefittype(‘自定义函数’,’independent’,’自变量’,’coefficient’,{系数1，">
+<meta name="twitter:image" content="http://yoursite.com/2018/04/07/数据拟合/C:/hub一大堆/Blog/blog/source/_posts/数据拟合/绘制参数表">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-数据拟合" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-数据拟合" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/04/07/数据拟合/" class="article-date">
   <time datetime="2018-04-07T12:43:58.000Z" itemprop="datePublished">2018-04-07</time>
@@ -74,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/07/数据拟合/">数据拟合</a>
+    <h1 class="article-title" itemprop="name">
+      数据拟合
     </h1>
   
 
@@ -112,98 +117,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-数模——储存" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/30/数模——储存/" class="article-date">
-  <time datetime="2018-03-30T13:01:22.000Z" itemprop="datePublished">2018-03-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/30/数模——储存/">数模——储存</a>
-    </h1>
+    <a href="/2018/03/30/数模——储存/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">数模——储存</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天学习了数学模型之储存模型，具体内容参见教材P59，链接网易公开课在线课程<a href="http://open.163.com/movie/2013/4/G/S/M98EVI91I_M9BVR0TGS.html" target="_blank" rel="noopener">class</a></p>
-<h2 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h2><h3 id="枚举法"><a href="#枚举法" class="headerlink" title="枚举法"></a>枚举法</h3><p>在需要计算总费用时，先假设代入几个值，大的，小的，中间的，从而得到一个大概趋势。</p>
-<h3 id="积分思想——求平均值"><a href="#积分思想——求平均值" class="headerlink" title="积分思想——求平均值"></a>积分思想——求平均值</h3><p>本题中，储存量q（t），并假设每天每件产品储存费为c2。则用c2乘以q在0到T（一个周期内）的积分，即可得到所消费的价格。在这里这其实和传统的算术平均数没什么本质区别，毕竟q线性变换。但是，积分求平均值是正确、通用的办法。换句话说，曲线可以是任意形状，只要积分合适，均可找到正确的花费。</p>
-<h2 id="核心思想"><a href="#核心思想" class="headerlink" title="核心思想"></a>核心思想</h2><h3 id="分类讨论"><a href="#分类讨论" class="headerlink" title="分类讨论"></a>分类讨论</h3><p>本模型分允许与不允许缺货的情形进行讨论。当然还涉及假设部分内容。在不允许缺货的情况下假设“瞬间供货”，而允许缺货情形下次采购自动补齐。显然不允许缺货是允许缺货的一种特例，然而两种思维、考虑方式却有所不同：不允许缺货的情况下一个周期比真实的储存周期略长，长的部分不必计算储存费用，却需要额外计算缺货损失费。<br>就像牛顿定律是相对论宏观低速状态下的特例一样，可以退化过去，证明假设正确。<br>允许缺货情况下如果缺货损失费无限大，则近似于不能缺货。相关验证过程略。</p>
-<h3 id="与常识适当比较"><a href="#与常识适当比较" class="headerlink" title="与常识适当比较"></a>与常识适当比较</h3><p>将几个变量c1，c2还有T，Q等根据推导式观察，一个量变化，另一个或几个怎样随之变化。如果与常识相符，再次说明模型正确。</p>
-<h2 id="思考问题"><a href="#思考问题" class="headerlink" title="思考问题"></a>思考问题</h2><p>1、为什么假设一定是等周期生产？<br>2、生产费用，成本为何不予考虑？（其实那些都假定为常数，没有必要考虑）<br>3、如果考虑打折、生产能力有限的情况怎么办？<br>4、多个物品同时进货，换产问题？</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/30/数模——储存/" data-id="cjftpdwxi0001m8lmghmmxikp" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/22/hello-world/" class="article-date">
-  <time datetime="2018-03-22T08:32:11.022Z" itemprop="datePublished">2018-03-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/22/hello-world/" data-id="cjftpdwxm0002m8lmflnch8a2" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
