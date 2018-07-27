@@ -5,18 +5,18 @@
   
 
   
-  <title>&#39;导入数据&#39; | Hexo</title>
+  <title>和微分方程有关 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="和excel有关导入xlsread函数A=xlsread(“haha.xlsx”)；如图所示获得矩阵形式表示的数据。 导出xlswrite函数xlswrite（”文件名.xlsx”,B),及把B向量（矩阵）导入excel文件中，从第一行开始导入；如果原来excel文件有数据，则覆盖。 txt[A,B,C,……]=textread(‘filename’,’format’,N,’headlines’,">
+  <meta name="description" content="[T,Y] = ode45(odefun,tspan,y0)odefun 是函数句柄,可以是函数文件名,匿名函数句柄或内联函数名tspan 是区间 [t0 tf] 或者一系列散点[t0,t1,…,tf]y0 是初始值向量T 返回列向量的时间点Y 返回对应T的求解列向量此方法并非解析计算，而是数值计算">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&#39;导入数据&#39;">
-<meta property="og:url" content="http://yoursite.com/2018/04/14/导入数据/index.html">
+<meta property="og:title" content="和微分方程有关">
+<meta property="og:url" content="http://yoursite.com/2018/04/22/和微分方程有关/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="和excel有关导入xlsread函数A=xlsread(“haha.xlsx”)；如图所示获得矩阵形式表示的数据。 导出xlswrite函数xlswrite（”文件名.xlsx”,B),及把B向量（矩阵）导入excel文件中，从第一行开始导入；如果原来excel文件有数据，则覆盖。 txt[A,B,C,……]=textread(‘filename’,’format’,N,’headlines’,">
-<meta property="og:updated_time" content="2018-04-17T14:39:54.123Z">
+<meta property="og:description" content="[T,Y] = ode45(odefun,tspan,y0)odefun 是函数句柄,可以是函数文件名,匿名函数句柄或内联函数名tspan 是区间 [t0 tf] 或者一系列散点[t0,t1,…,tf]y0 是初始值向量T 返回列向量的时间点Y 返回对应T的求解列向量此方法并非解析计算，而是数值计算">
+<meta property="og:updated_time" content="2018-04-27T13:57:22.442Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#39;导入数据&#39;">
-<meta name="twitter:description" content="和excel有关导入xlsread函数A=xlsread(“haha.xlsx”)；如图所示获得矩阵形式表示的数据。 导出xlswrite函数xlswrite（”文件名.xlsx”,B),及把B向量（矩阵）导入excel文件中，从第一行开始导入；如果原来excel文件有数据，则覆盖。 txt[A,B,C,……]=textread(‘filename’,’format’,N,’headlines’,">
+<meta name="twitter:title" content="和微分方程有关">
+<meta name="twitter:description" content="[T,Y] = ode45(odefun,tspan,y0)odefun 是函数句柄,可以是函数文件名,匿名函数句柄或内联函数名tspan 是区间 [t0 tf] 或者一系列散点[t0,t1,…,tf]y0 是初始值向量T 返回列向量的时间点Y 返回对应T的求解列向量此方法并非解析计算，而是数值计算">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -63,10 +63,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-导入数据" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-和微分方程有关" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/04/14/导入数据/" class="article-date">
-  <time datetime="2018-04-14T12:58:27.000Z" itemprop="datePublished">2018-04-14</time>
+    <a href="/2018/04/22/和微分方程有关/" class="article-date">
+  <time datetime="2018-04-22T14:22:24.000Z" itemprop="datePublished">2018-04-22</time>
 </a>
     
   </div>
@@ -77,7 +77,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      &#39;导入数据&#39;
+      和微分方程有关
     </h1>
   
 
@@ -85,14 +85,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="和excel有关"><a href="#和excel有关" class="headerlink" title="和excel有关"></a>和excel有关</h2><h2 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h2><h3 id="xlsread函数"><a href="#xlsread函数" class="headerlink" title="xlsread函数"></a>xlsread函数</h3><p>A=xlsread(“haha.xlsx”)；<br>如图所示获得矩阵形式表示的数据。</p>
-<h2 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h2><h3 id="xlswrite函数"><a href="#xlswrite函数" class="headerlink" title="xlswrite函数"></a>xlswrite函数</h3><p>xlswrite（”文件名.xlsx”,B),及把B向量（矩阵）导入excel文件中，从第一行开始导入；如果原来excel文件有数据，则覆盖。</p>
-<h2 id="txt"><a href="#txt" class="headerlink" title="txt"></a>txt</h2><p>[A,B,C,……]=textread(‘filename’,’format’,N,’headlines’,M)<br>format表示读出变量的字段格式；N表示读取的次数，每次读取一行；headerlines表示从M+1行开始读入。<br>写入过程需要使用fopen函数，与C极其相似。<br>在这里介绍一下eval函数，用于把字符串转换为可执行的MATLAB语句。看起来用处不大，实际上可以解决好多问题，比如：<br>for i=1:100<br>eval([‘load ’ num2str(i) ‘.mat’])<br>end<br>相当于创建一百个loadi.mat，这在普通的for循环是不可能实现的   </p>
+        <p>[T,Y] = ode45(odefun,tspan,y0)<br>odefun 是函数句柄,可以是函数文件名,匿名函数句柄或内联函数名<br>tspan 是区间 [t0 tf] 或者一系列散点[t0,t1,…,tf]<br>y0 是初始值向量<br>T 返回列向量的时间点<br>Y 返回对应T的求解列向量<br>此方法并非解析计算，而是数值计算</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/14/导入数据/" data-id="cjk3b82xy0007zwlmz123qf2h" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2018/04/22/和微分方程有关/" data-id="cjk3b82xu0004zwlmbftc0swq" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -101,19 +99,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/04/18/和回归分析有关/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/05/11/android-studio-第一部分“/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Récent</strong>
       <div class="article-nav-title">
         
-          和回归分析有关
+          android studio 第一部分“
         
       </div>
     </a>
   
   
-    <a href="/2018/04/07/数据拟合/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/04/18/和回归分析有关/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Ancien</strong>
-      <div class="article-nav-title">数据拟合及图像绘制</div>
+      <div class="article-nav-title">和回归分析有关</div>
     </a>
   
 </nav>

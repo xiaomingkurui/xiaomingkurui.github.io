@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,169 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-爬虫基础知识——1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/27/爬虫基础知识——1/" class="article-date">
+  <time datetime="2018-07-27T01:08:03.000Z" itemprop="datePublished">2018-07-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/27/爬虫基础知识——1/">&#39;爬虫基础知识——1&#39;</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##python常见库   </p>
+<p>###builtwith模块<br>使用中常常</p>
+<blockquote>
+<blockquote>
+<p>>>import builtwith<br>>>builtwith.parse(‘website’)   </p>
+</blockquote>
+</blockquote>
+<p>即可获得网站所采用的技术。</p>
+<p>###whois模块<br>>>whois.whois(‘website’)即可获得网站所有者</p>
+<p>###urllib<br>现在（Python3），urllib,urllib2等合并为一个统一库——urllib库。而现在的urllib.request即为原来的urllib2<br>核心步骤功能就是 urllib2.request.urlopen(url).read()，实现下载URL。</p>
+<p>###补充Python基础知识点——调用自定义模块<br>①定义的模块（.py文件)在同一个文件夹里，直接import即可，用到里面的具体函数再使用间接运算符 . 即可。<br>②在不同文件夹中，需使用sys进行修改。实际上就是把路径添加到sys.path中。<br>sys.path.append(‘绝对路径’)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/27/爬虫基础知识——1/" data-id="cjk3b82xx0006zwlmio19rrtv" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-安卓初级知识" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/19/安卓初级知识/" class="article-date">
+  <time datetime="2018-05-19T12:02:03.000Z" itemprop="datePublished">2018-05-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/19/安卓初级知识/">安卓初级知识</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="创建活动"><a href="#创建活动" class="headerlink" title="创建活动"></a>创建活动</h2><p>任何活动都需要在活动中重写onCreate方法。</p>
+<h2 id="创建布局"><a href="#创建布局" class="headerlink" title="创建布局"></a>创建布局</h2><p>在res上右击，New–Directory,创建一个目录，然后再右击，选择Layout resource file可以创造出新的布局文件窗口<br>之后需要在活动的java文件中加载布局，即调用setContentView方法。之后需要在AndroidManifest.xml中加入<intent-filter>标签，即配置主活动。</intent-filter></p>
+<h3 id="启动活动"><a href="#启动活动" class="headerlink" title="启动活动"></a>启动活动</h3><p>Intent概念：两个参数，第一个表示“上下文”，第二个为目标活动。这种调用方式为显示调用。</p>
+<h2 id="加按钮"><a href="#加按钮" class="headerlink" title="加按钮"></a>加按钮</h2><p>在新创建的布局文件的xml文件中加 &lt; Button/&gt;就好。</p>
+<h2 id="menu"><a href="#menu" class="headerlink" title="menu"></a>menu</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/19/安卓初级知识/" data-id="cjk3b82xs0003zwlmrqildaxq" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-android-studio-第一部分“" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/11/android-studio-第一部分“/" class="article-date">
+  <time datetime="2018-05-11T12:55:50.000Z" itemprop="datePublished">2018-05-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/11/android-studio-第一部分“/">android studio 第一部分“</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##project目录下需要注意的几小点</p>
+<p>##app<br>项目中代码、资源等几乎全部都放在此目录下。<br>app中的libs：<br>第三方、扩展jar包都需要放在此目录下。<br>java：<br>放置所有java代码<br>res：<br>所有图片、布局、字符串等资源<br>test：<br>编写Unit Test测试用例的，对项目自动化测试的一种方式。<br>proguard-rules.pro：<br>项目代码的混淆规则，防破解。   </p>
+<p>##代码分析<br>打开HelloWorldActivity源码，其中onCreate（）方法是每个活动必须执行的方法；而且代码中并不能发现helloworld字样：这是逻辑和试图的分离。setContentView()方法引入布局（layout）<br>可以加入日志，及Log方法。具体参见1.4.1.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/11/android-studio-第一部分“/" data-id="cjk3b82xh0000zwlmqiw5sq9s" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-和微分方程有关" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/22/和微分方程有关/" class="article-date">
+  <time datetime="2018-04-22T14:22:24.000Z" itemprop="datePublished">2018-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/22/和微分方程有关/">和微分方程有关</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[T,Y] = ode45(odefun,tspan,y0)<br>odefun 是函数句柄,可以是函数文件名,匿名函数句柄或内联函数名<br>tspan 是区间 [t0 tf] 或者一系列散点[t0,t1,…,tf]<br>y0 是初始值向量<br>T 返回列向量的时间点<br>Y 返回对应T的求解列向量<br>此方法并非解析计算，而是数值计算</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/22/和微分方程有关/" data-id="cjk3b82xu0004zwlmbftc0swq" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-和回归分析有关" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -86,11 +249,12 @@
         <h2 id="置信区间"><a href="#置信区间" class="headerlink" title="置信区间"></a>置信区间</h2><p>常用bint表示。<br>置信区间是指由样本统计量所构造的总体参数的估计区间。在统计学中，一个概率样本的置信区间（Confidence interval）是对这个样本的某个总体参数的区间估计。置信区间展现的是这个参数的真实值有一定概率落在测量结果的周围的程度。置信区间给出的是被测量参数的测量值的可信程度，即前面所要求的“一个概率”。其中样本越多，置信区间越狭窄。</p>
 <h2 id="显著性水平（α）"><a href="#显著性水平（α）" class="headerlink" title="显著性水平（α）"></a>显著性水平（α）</h2><p>显著性水平是估计总体参数落在某一区间内，可能犯错误的概率，用α表示。其中1-α为置信度，表明了区间估计的可靠度。通常取α为0.05或0.01。注：若置信区间包含零点，则表明该变量不显著，在模型中可考虑将该变量舍去。</p>
 <h2 id="残差"><a href="#残差" class="headerlink" title="残差"></a>残差</h2><p>残差在数理统计中是指实际观察值与估计值（拟合值）之间的差。“残差”蕴含了有关模型基本假设的重要信息。如果回归模型正确的话， 我们可以将残差看作误差的观测值。<br>它应符合模型的假设条件，且具有误差的一些性质。利用残差所提供的信息，来考察模型假设的合理性及数据的可靠性称为残差分析。</p>
-<h2 id="帽子矩阵"><a href="#帽子矩阵" class="headerlink" title="帽子矩阵"></a>帽子矩阵</h2>
+<h2 id="帽子矩阵"><a href="#帽子矩阵" class="headerlink" title="帽子矩阵"></a>帽子矩阵</h2><p>一类正交投影矩阵</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/18/和回归分析有关/" data-id="cjgaw7cje00017clm4lw5t3rp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/18/和回归分析有关/" data-id="cjk3b82xn0001zwlmg3hhutyd" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -129,7 +293,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/14/导入数据/" data-id="cjgaw7cjh00027clmqrufof2a" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/14/导入数据/" data-id="cjk3b82xy0007zwlmz123qf2h" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -175,7 +339,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/07/数据拟合/" data-id="cjgaw7cjj00037clmob6fykfo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/07/数据拟合/" data-id="cjk3b82y00008zwlmzgff6mpo" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -217,7 +381,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/30/数模——储存/" data-id="cjgaw7cjk00047clma2xjicrs" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/03/30/数模——储存/" data-id="cjk3b82xv0005zwlmuurezc3x" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -262,7 +426,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/22/hello-world/" data-id="cjgaw7cj800007clmiayod195" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/03/22/hello-world/" data-id="cjk3b82xq0002zwlms9lk7q26" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -290,7 +454,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
     </div>
   </div>
 
@@ -298,28 +462,28 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
           <li>
+            <a href="/2018/07/27/爬虫基础知识——1/">&#39;爬虫基础知识——1&#39;</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/19/安卓初级知识/">安卓初级知识</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/11/android-studio-第一部分“/">android studio 第一部分“</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/22/和微分方程有关/">和微分方程有关</a>
+          </li>
+        
+          <li>
             <a href="/2018/04/18/和回归分析有关/">和回归分析有关</a>
-          </li>
-        
-          <li>
-            <a href="/2018/04/14/导入数据/">&#39;导入数据&#39;</a>
-          </li>
-        
-          <li>
-            <a href="/2018/04/07/数据拟合/">数据拟合及图像绘制</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/30/数模——储存/">数模——储存</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/22/hello-world/">Hello World</a>
           </li>
         
       </ul>
@@ -335,7 +499,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2018 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé par <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
