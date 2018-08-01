@@ -7,16 +7,16 @@
   
   <title>&#39;爬虫基础知识——1&#39; | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##python常见库      ###builtwith模块使用中常常      &amp;gt;&amp;gt;import builtwith&amp;gt;&amp;gt;builtwith.parse(‘website’)        即可获得网站所采用的技术。    ###whois模块&amp;gt;&amp;gt;whois.whois(‘website’)即可获得网站所有者    ###urllib现在（Python3），urllib,urllib2等合并为一">
+  <meta name="description" content="python常见库builtwith模块使用中常常      &amp;gt;&amp;gt;import builtwith&amp;gt;&amp;gt;builtwith.parse(‘website’)        即可获得网站所采用的技术。    whois模块&amp;gt;&amp;gt;whois.whois(‘website’)即可获得网站所有者    urllib现在（Python3），urllib,urllib2等合并为一个统一库——urllib库。而现在">
 <meta property="og:type" content="article">
 <meta property="og:title" content="&#39;爬虫基础知识——1&#39;">
 <meta property="og:url" content="http://yoursite.com/2018/07/27/爬虫基础知识——1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##python常见库      ###builtwith模块使用中常常      &amp;gt;&amp;gt;import builtwith&amp;gt;&amp;gt;builtwith.parse(‘website’)        即可获得网站所采用的技术。    ###whois模块&amp;gt;&amp;gt;whois.whois(‘website’)即可获得网站所有者    ###urllib现在（Python3），urllib,urllib2等合并为一">
-<meta property="og:updated_time" content="2018-08-01T12:28:33.281Z">
+<meta property="og:description" content="python常见库builtwith模块使用中常常      &amp;gt;&amp;gt;import builtwith&amp;gt;&amp;gt;builtwith.parse(‘website’)        即可获得网站所采用的技术。    whois模块&amp;gt;&amp;gt;whois.whois(‘website’)即可获得网站所有者    urllib现在（Python3），urllib,urllib2等合并为一个统一库——urllib库。而现在">
+<meta property="og:updated_time" content="2018-08-01T12:31:21.452Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="&#39;爬虫基础知识——1&#39;">
-<meta name="twitter:description" content="##python常见库      ###builtwith模块使用中常常      &amp;gt;&amp;gt;import builtwith&amp;gt;&amp;gt;builtwith.parse(‘website’)        即可获得网站所采用的技术。    ###whois模块&amp;gt;&amp;gt;whois.whois(‘website’)即可获得网站所有者    ###urllib现在（Python3），urllib,urllib2等合并为一">
+<meta name="twitter:description" content="python常见库builtwith模块使用中常常      &amp;gt;&amp;gt;import builtwith&amp;gt;&amp;gt;builtwith.parse(‘website’)        即可获得网站所采用的技术。    whois模块&amp;gt;&amp;gt;whois.whois(‘website’)即可获得网站所有者    urllib现在（Python3），urllib,urllib2等合并为一个统一库——urllib库。而现在">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -54,7 +54,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -85,22 +85,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##python常见库     </p>
-<p>###builtwith模块<br>使用中常常   </p>
+        <h2 id="python常见库"><a href="#python常见库" class="headerlink" title="python常见库"></a>python常见库</h2><h3 id="builtwith模块"><a href="#builtwith模块" class="headerlink" title="builtwith模块"></a>builtwith模块</h3><p>使用中常常   </p>
 <blockquote>
 <blockquote>
 <p>>>import builtwith<br>>>builtwith.parse(‘website’)     </p>
 </blockquote>
 </blockquote>
 <p>即可获得网站所采用的技术。   </p>
-<p>###whois模块<br>>>whois.whois(‘website’)即可获得网站所有者   </p>
-<p>###urllib<br>现在（Python3），urllib,urllib2等合并为一个统一库——urllib库。而现在的urllib.request即为原来的urllib2<br>核心步骤功能就是 urllib2.request.urlopen(url).read()，实现下载URL。   </p>
-<p>###补充Python基础知识点——调用自定义模块<br>①定义的模块（.py文件)在同一个文件夹里，直接import即可，用到里面的具体函数再使用间接运算符 . 即可。<br>②在不同文件夹中，需使用sys进行修改。实际上就是把路径添加到sys.path中。<br>sys.path.append(‘绝对路径’)<br>另一种方法：就是将路径加入到环境变量中去，这个是永久的，你可以新建一个专门存放模块的文件夹，把这个文件夹的路径加入到环境变量中去，可以一次劳动，永不麻烦，同时也便于管理。</p>
+<h3 id="whois模块"><a href="#whois模块" class="headerlink" title="whois模块"></a>whois模块</h3><p>>>whois.whois(‘website’)即可获得网站所有者   </p>
+<h3 id="urllib"><a href="#urllib" class="headerlink" title="urllib"></a>urllib</h3><p>现在（Python3），urllib,urllib2等合并为一个统一库——urllib库。而现在的urllib.request即为原来的urllib2<br>核心步骤功能就是 urllib2.request.urlopen(url).read()，实现下载URL。   </p>
+<h3 id="补充Python基础知识点——调用自定义模块"><a href="#补充Python基础知识点——调用自定义模块" class="headerlink" title="补充Python基础知识点——调用自定义模块"></a>补充Python基础知识点——调用自定义模块</h3><p>①定义的模块（.py文件)在同一个文件夹里，直接import即可，用到里面的具体函数再使用间接运算符 . 即可。<br>②在不同文件夹中，需使用sys进行修改。实际上就是把路径添加到sys.path中。<br>sys.path.append(‘绝对路径’)<br>另一种方法：就是将路径加入到环境变量中去，这个是永久的，你可以新建一个专门存放模块的文件夹，把这个文件夹的路径加入到环境变量中去，可以一次劳动，永不麻烦，同时也便于管理。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/27/爬虫基础知识——1/" data-id="cjkb3yr1c00094glmr1ylvqx0" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/07/27/爬虫基础知识——1/" data-id="cjkb41x1k0009gclmjfgxpm13" class="article-share-link">Share</a>
       
       
     </footer>
@@ -110,7 +109,7 @@
 <nav id="article-nav">
   
     <a href="/2018/08/01/TensorFlow基础知识/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
+      <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
           &#39;TensorFlow基础知识&#39;
@@ -120,7 +119,7 @@
   
   
     <a href="/2018/05/19/安卓初级知识/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Älter</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">安卓初级知识</div>
     </a>
   
@@ -143,7 +142,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
     </div>
@@ -153,7 +152,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
